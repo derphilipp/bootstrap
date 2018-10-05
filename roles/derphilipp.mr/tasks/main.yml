@@ -1,0 +1,10 @@
+---
+- name: mr exists
+  command: vcsh mr status
+  register: mr_installation
+  ignore_errors: True
+  changed_when: False
+
+- name: Install mr
+  command: vcsh clone git@gitlab.com:derphilipp/_mr.git mr
+  when: mr_installation is failed

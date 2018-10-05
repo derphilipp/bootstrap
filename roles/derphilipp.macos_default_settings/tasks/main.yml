@@ -1,0 +1,79 @@
+---
+- name: Set default Font for iTerm
+  plist:
+    path: "New Bookmarks:0:Normal Font"
+    value: "Droid SansMonoNerdFontComplete- 14"
+    file: "~/Library/Preferences/com.googlecode.iterm2.plist"
+
+- name: Always display all extensions
+  osx_defaults:
+    domain: NSGlobalDomain
+    key: AppleShowAllExtensions
+    type: bool
+    value: true
+    state: present
+
+
+- name: Allow resizing of windows via mouse
+  osx_defaults:
+    domain: com.amethyst.Amethyst.plist
+    key: mouse-resizes-windows
+    type: bool
+    value: true
+    state: present
+
+- name: Allow swapping of windows via mouse
+  osx_defaults:
+    domain: com.amethyst.Amethyst.plist
+    key: mouse-swaps-windows
+    type: bool
+    value: true
+    state: present
+
+- name: Do not display full path in Finder window
+  osx_defaults:
+    domain: com.apple.finder
+    key: ShowPathbar
+    type: bool
+    value: false
+    state: present
+
+- name: Display full path in Finder title
+  osx_defaults:
+    domain: com.apple.finder
+    key: _FXShowPosixPathInTitle
+    type: bool
+    value: true
+    state: present
+
+- name: Display status bar in Finder window
+  osx_defaults:
+    domain: com.apple.finder
+    key: ShowStatusBar
+    type: bool
+    value: true
+    state: present
+
+- name: Save to disk instead of iCloud by default
+  osx_defaults:
+    domain: NSGlobalDomain
+    key: NSDocumentSaveNewDocumentsToCloud
+    type: bool
+    value: true
+    state: present
+
+- name: Disable the creation of .DS_Store on USB volumes
+  osx_defaults:
+    domain: com.apple.DesktopServices
+    key: DSDontWriteUSBStores
+    type: bool
+    value: true
+    state: present
+
+- name: Disable the creation of .DS_Store on network volumes
+  osx_defaults:
+    domain: com.apple.DesktopServices
+    key: DSDontWriteNetworkStores
+    type: bool
+    value: true
+    state: present

@@ -1,0 +1,12 @@
+[localhost]
+127.0.0.1  ansible_connection=local
+# - hosts: local
+#   connection: local
+
+# ---
+#
+# hosts:
+#   hosts:
+#     localhost:
+#      vars:
+#        ansible_connection: local

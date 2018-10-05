@@ -1,0 +1,14 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+mutagen = "*"
+ansible = "*"
+ansible-lint = "*"
+ansible-review = "*"
+biplist = "*"
+"delegator.py" = "*"
+
+[dev-packages]

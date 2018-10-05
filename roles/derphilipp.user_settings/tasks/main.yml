@@ -1,0 +1,18 @@
+---
+- user:
+    name: phw
+    generate_ssh_key: yes
+    ssh_key_bits: 8192
+    ssh_key_file: .ssh/id_rsa
+    shell: /usr/local/bin/fish
+
+- name: Check if gitlab.com is possible
+  command: ssh git@gitlab.com
+  register: gitlab_auth
+  changed_when: False
+  ignore_errors: yes
+
+- pause:
+    prompt: "Please add key to gitlab"
+  when: gitlab_auth.rc != 0
+

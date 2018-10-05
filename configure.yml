@@ -1,0 +1,5 @@
+---
+- name: Include os specific
+  hosts: all
+  include_tasks: macos.yml
+  when: ansible_distribution == "MacOS"

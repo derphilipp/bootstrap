@@ -28,7 +28,7 @@ brew_cask_packages:
 - 'rcdefaultapp'
 
 brew_packages:
-- 'aria2c'
+- 'aria2'
 - 'bat'
 - 'bash'
 - 'direnv'

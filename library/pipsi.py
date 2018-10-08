@@ -3,18 +3,17 @@ from ansible.module_utils.basic import *
 import delegator
 import re
 
-
 REGEX = r"^  Package \"(.*)\":$"
 
 
 def _install(name):
-    result = delegator.run('pipsi list')
+    result = delegator.run("pipsi install {}".format(name))
     return result.return_code == 0
 
 
 def _list():
     elements = []
-    result = delegator.run('pipsi list')
+    result = delegator.run("pipsi list")
     matches = re.finditer(REGEX, result.out, re.MULTILINE)
     for matchNum, match in enumerate(matches):
         matchNum = matchNum + 1
@@ -45,14 +44,22 @@ def pipsi_absent(data=None):
 
 def main():
     fields = {
-        "name": {"required": True, "type": "str"},
-        "state": {"default": "present", "choices": ["present", "absent"], "type": "str"},
+        "name": {
+            "required": True,
+            "type": "str"
+        },
+        "state": {
+            "default": "present",
+            "choices": ["present", "absent"],
+            "type": "str"
+        },
     }
 
     choice_map = {"present": pipsi_present, "absent": pipsi_absent}
 
     module = AnsibleModule(argument_spec=fields)
-    is_error, has_changed, result = choice_map.get(module.params["state"])(module.params)
+    is_error, has_changed, result = choice_map.get(module.params["state"])(
+        module.params)
 
     if not is_error:
         module.exit_json(changed=has_changed, meta=result)
@@ -62,4 +69,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

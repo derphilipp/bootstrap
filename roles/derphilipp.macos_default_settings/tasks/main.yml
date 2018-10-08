@@ -77,3 +77,11 @@
     type: bool
     value: true
     state: present
+
+- name: Set activity monitor to cpu history
+  osx_defaults:
+    domain: com.apple.ActivityMonitor.plist
+    key: IconType
+    type: int
+    value: 6
+    state: present

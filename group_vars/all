@@ -18,6 +18,8 @@ brew_cask_packages:
 - 'istat-menus'
 - 'iterm2'
 - 'keka'
+- 'keka'
+- 'kekadefaultapp'
 - 'nextcloud'
 - 'omnigraffle'
 - 'pocket-casts'

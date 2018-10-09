@@ -1,102 +1,104 @@
 ---
 brew_cask_multimedia:
-- '1password6'
-- 'alfred'
-- 'dropbox'
-- 'duet'
-- 'franz'
-- 'istat-menus'
-- 'nextcloud'
-- 'omnigraffle'
-- 'pocket-casts'
-- 'spotify'
+  - '1password6'
+  - 'alfred'
+  - 'dropbox'
+  - 'duet'
+  - 'franz'
+  - 'istat-menus'
+  - 'nextcloud'
+  - 'omnigraffle'
+  - 'pocket-casts'
+  - 'spotify'
 brew_cask_packages:
-- 'Homebrew/homebrew-cask-fonts/font-droidsansmono-nerd-font'
-- 'Homebrew/homebrew-cask-fonts/font-droidsansmono-nerd-font-mono'
-- 'amethyst'
-- 'appcleaner'
-- 'borgbackup'
-- 'clipy'
-- 'cyberduck'
-- 'firefox'
-- 'google-chrome'
-- 'iina'
-- 'iterm2'
-- 'keka'
-- 'kekadefaultapp'
-- 'rcdefaultapp'
-- 'silicon-labs-vcp-driver'
-- 'tunnelblick'
-- 'visual-studio-code'
+  - 'Homebrew/homebrew-cask-fonts/font-droidsansmono-nerd-font'
+  - 'Homebrew/homebrew-cask-fonts/font-droidsansmono-nerd-font-mono'
+  - 'amethyst'
+  - 'appcleaner'
+  - 'borgbackup'
+  - 'clipy'
+  - 'cyberduck'
+  - 'firefox'
+  - 'google-chrome'
+  - 'iina'
+  - 'iterm2'
+  - 'keka'
+  - 'kekadefaultapp'
+  - 'rcdefaultapp'
+  - 'silicon-labs-vcp-driver'
+  - 'tunnelblick'
+  - 'visual-studio-code'
 brew_packages:
-- 'aria2'
-- 'bash'
-- 'bat'
-- 'ddgr'
-- 'diff-so-fancy'
-- 'direnv'
-- 'cookiecutter'
-- 'entr'
-- 'exa'
-- 'fd'
-- 'fish'
-- 'gibo'
-- 'git'
-- 'git-extras'
-- 'gnu-sed'
-- 'httpie'
-- 'hub'
-- 'imagemagick'
-- 'iproute2mac'
-- 'mr'
-- 'neovim'
-- 'nmap'
-- 'pipenv'
-- 'python'
-- 'ripgrep'
-- 'thefuck'
-- 'tldr'
-- 'tmux'
-- 'vcsh'
+  - 'aria2'
+  - 'bash'
+  - 'bat'
+  - 'ddgr'
+  - 'diff-so-fancy'
+  - 'direnv'
+  - 'cookiecutter'
+  - 'entr'
+  - 'exa'
+  - 'fd'
+  - 'fish'
+  - 'gibo'
+  - 'git'
+  - 'git-extras'
+  - 'gnu-sed'
+  - 'httpie'
+  - 'hub'
+  - 'imagemagick'
+  - 'iproute2mac'
+  - 'mr'
+  - 'neovim'
+  - 'nmap'
+  - 'pipenv'
+  - 'python'
+  - 'ripgrep'
+  - 'thefuck'
+  - 'tldr'
+  - 'tmux'
+  - 'vcsh'
+
 dockitems_to_persist:
   - name: "iTerm"
+    path: "/Applications/iTerm.app"
+    pos: 1
+  - name: Safari
+    path: "/Applications/Safari.app"
+    pos: 2
+  - name: OmniFocus
+    path: "/Applications/OmniFocus.app"
+    pos: 3
+  - name: IINA
+    path: "/Applications/IINA.app"
+    pos: 4
+  - name: Visual Studio Code
+    path: "/Applications/Visual Studio Code.app"
+    pos: 5
+  - name: 1Password
     path: "/Applications/1Password 6.app"
     pos: 6
   - name: Calendar
     path: "/Applications/Calendar.app"
     pos: 7
-    path: "/Applications/IINA.app"
-    pos: 4
-  - name: Visual Studio Code
-    path: "/Applications/OmniFocus.app"
-    pos: 3
-  - name: IINA
-    path: "/Applications/Safari.app"
-    pos: 2
-  - name: OmniFocus
-    path: "/Applications/Visual Studio Code.app"
-    pos: 5
-  - name: 1Password
-    path: "/Applications/iTerm.app"
-    pos: 1
-  - name: Safari
+
 dockitems_to_remove:
-  - Launchpad
-  - Notes
-  - Reminders
-  - Maps
-  - Photos
-  - FaceTime
-  - iBooks
   - App Store
-  - iTunes
-  - System Preferences
   - Contacts
+  - FaceTime
+  - Launchpad
+  - Maps
+  - Notes
+  - Photos
+  - Reminders
+  - System Preferences
+  - iBooks
+  - iTunes
 install_homebrew_if_missing: true
 mas_installed_apps:
-  - { id: 1346203938, name: "OmniFocus" }
-  - { id: 880001334, name: "Reeder" }
-  - { id: 411643860, name: "DaisyDisk" }
+  - {id: 1346203938, name: "OmniFocus"}
+  - {id: 880001334, name: "Reeder"}
+  - {id: 411643860, name: "DaisyDisk"}
 pipsi_packages:
   - organize-tool
 upgrade_homebrew_packages: false

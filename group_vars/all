@@ -35,6 +35,7 @@ brew_packages:
 - 'bat'
 - 'diff-so-fancy'
 - 'direnv'
+- 'cookiecutter'
 - 'entr'
 - 'exa'
 - 'fd'

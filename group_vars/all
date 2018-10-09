@@ -41,6 +41,7 @@ brew_packages:
 - 'fd'
 - 'fish'
 - 'git'
+- 'git-extras'
 - 'gnu-sed'
 - 'httpie'
 - 'imagemagick'

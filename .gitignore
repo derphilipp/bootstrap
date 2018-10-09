@@ -1,3 +1,5 @@
-playbook.retry
 roles/**
 !roles/derphilipp.*
+*.retry
+
+

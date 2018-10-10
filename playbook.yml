@@ -5,7 +5,7 @@
   roles:
     - derphilipp.user_settings
     - derphilipp.homebrew_packages
-    - derphilipp.pipsi
+    - derphilipp.python
     - derphilipp.macos_default_settings
     - derphilipp.mr
     - derphilipp.dock_settings

@@ -103,6 +103,10 @@ mas_installed_apps:
   - {id: 1346203938, name: "OmniFocus"}
   - {id: 880001334, name: "Reeder"}
   - {id: 411643860, name: "DaisyDisk"}
+pip_packages_globally:
+  - neovim
+pip_packages:
+  - pipsi
 pipsi_packages:
   - organize-tool
 upgrade_homebrew_packages: false

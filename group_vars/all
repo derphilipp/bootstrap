@@ -1,15 +1,4 @@
 ---
-brew_cask_multimedia:
-  - '1password6'
-  - 'alfred'
-  - 'dropbox'
-  - 'duet'
-  - 'franz'
-  - 'istat-menus'
-  - 'nextcloud'
-  - 'omnigraffle'
-  - 'pocket-casts'
-  - 'spotify'
 brew_cask_packages:
   - 'Homebrew/homebrew-cask-fonts/font-droidsansmono-nerd-font'
   - 'Homebrew/homebrew-cask-fonts/font-droidsansmono-nerd-font-mono'
@@ -28,6 +17,17 @@ brew_cask_packages:
   - 'silicon-labs-vcp-driver'
   - 'tunnelblick'
   - 'visual-studio-code'
+brew_cask_multimedia_packages:
+  - '1password6'
+  - 'alfred'
+  - 'dropbox'
+  - 'duet'
+  - 'franz'
+  - 'istat-menus'
+  - 'nextcloud'
+  - 'omnigraffle'
+  - 'pocket-casts'
+  - 'spotify'
 brew_packages:
   - 'ansible-lint'
   - 'aria2'

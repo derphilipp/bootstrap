@@ -7,8 +7,7 @@ REGEX = r"^  Package \"(.*)\":$"
 
 
 def _install(name):
-    result = delegator.run("pipsi install {}".format(name))
-    return result.return_code == 0
+    return delegator.run("pipsi install {}".format(name))
 
 
 def _list():
@@ -31,8 +30,12 @@ def _is_installed(name):
 def pipsi_present(data):
     is_installed = _is_installed(data["name"])
     if not is_installed:
-        installation_result = _install(data["name"])
-        return installation_result, True, {}
+        call_result = _install(data["name"])
+        installation_result = call_result.return_code == 0
+        return installation_result, True, {
+            "stdout": call_result.out,
+            "stderr": call_result.err
+        }
     else:
         return False, False, {}
 

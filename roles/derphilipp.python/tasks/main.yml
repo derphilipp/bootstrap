@@ -1,16 +1,14 @@
 ---
 - name: install python pip packages globally
   pip:
-    name: "{{ item }}"
+    name: "{{ pip_packages_global }}"
     executable: /usr/local/bin/pip3
-  with_items: "{{ pip_packages_global }}"
 
 - name: install python pip packages for user
   pip:
-    name: "{{ item }}"
+    name: "{{ pip_packages }}"
     executable: /usr/local/bin/pip3
     extra_args: --user
-  with_items: "{{ pip_packages }}"
 
 - name: Install pipsi for user
   pip:

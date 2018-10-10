@@ -1,0 +1,7 @@
+---
+- name: install ruby packages globally
+  npm:
+    name: "{{ item }}"
+    executable: /usr/local/bin/npm
+    global: true
+  with_items: "{{ npm_packages_global }}"

@@ -52,17 +52,22 @@ brew_packages:
   - 'iproute2mac'
   - 'mr'
   - 'neovim'
+  - 'npm'
   - 'nmap'
   - 'pipenv'
   - 'pre-commit'
   - 'python'
   - 'ripgrep'
+  - 'ruby'
   - 'thefuck'
   - 'tldr'
   - 'tmux'
   - 'vcsh'
   - 'yamllint'
-
+npm_packages_global:
+  - 'git-recall'
+gem_packages_global:
+  - 'neovim'
 dockitems_to_persist:
   - name: "iTerm"
     path: "/Applications/iTerm.app"

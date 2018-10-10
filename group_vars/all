@@ -60,6 +60,7 @@ brew_packages:
   - 'python'
   - 'ripgrep'
   - 'ruby'
+  - 'rsync'
   - 'thefuck'
   - 'tldr'
   - 'tmux'

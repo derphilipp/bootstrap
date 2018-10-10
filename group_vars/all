@@ -42,6 +42,7 @@ brew_packages:
   - 'exa'
   - 'fd'
   - 'fish'
+  - 'gawk'
   - 'gibo'
   - 'git'
   - 'git-extras'

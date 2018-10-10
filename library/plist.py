@@ -1,12 +1,10 @@
 #!/usr/bin/env python3
 from ansible.module_utils.basic import *
-import subprocess
 import delegator
 
 
 def _get_value(path, file):
     escaped_path = path.replace(" ", r"\ ")
-
     result = delegator.run('/usr/libexec/PlistBuddy -c "Print:{}" {}'.format(escaped_path, file))
     return result.return_code, result.out.rstrip(), result.err
 
@@ -14,7 +12,6 @@ def _get_value(path, file):
 def _set_value(path, file, value):
     escaped_path = path.replace(" ", r"\ ")
     escaped_value = value.replace(" ", r"\ ")
-
     result = delegator.run('/usr/libexec/PlistBuddy -c "Set:{} {}" {}'.format(escaped_path, escaped_value, file))
     return result.return_code, result.out.rstrip(), result.err
 

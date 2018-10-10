@@ -1,7 +1,7 @@
 ---
 - name: Set default Font for iTerm
   plist:
-    path: "New Bookmarks:0:Normal Font"
+    path: "New\ Bookmarks:0:Normal\ Font"
     value: "Droid SansMonoNerdFontComplete- 14"
     file: "~/Library/Preferences/com.googlecode.iterm2.plist"
 

@@ -66,6 +66,7 @@ brew_packages:
   - 'yamllint'
 npm_packages_global:
   - 'git-recall'
+  - 'neovim'
 gem_packages_global:
   - 'neovim'
 dockitems_to_persist:

@@ -44,6 +44,7 @@ brew_packages:
   - 'exa'
   - 'fd'
   - 'fish'
+  - 'gawk'
   - 'gibo'
   - 'git'
   - 'git-extras'
@@ -61,6 +62,7 @@ brew_packages:
   - 'python'
   - 'ripgrep'
   - 'ruby'
+  - 'rsync'
   - 'thefuck'
   - 'tldr'
   - 'tmux'
@@ -69,6 +71,7 @@ brew_packages:
 
 npm_packages_global:
   - 'git-recall'
+  - 'neovim'
 
 gem_packages_global:
   - 'neovim'

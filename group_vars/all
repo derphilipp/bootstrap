@@ -17,6 +17,7 @@ brew_cask_packages:
   - 'silicon-labs-vcp-driver'
   - 'tunnelblick'
   - 'visual-studio-code'
+
 brew_cask_multimedia_packages:
   - '1password6'
   - 'alfred'
@@ -28,6 +29,7 @@ brew_cask_multimedia_packages:
   - 'omnigraffle'
   - 'pocket-casts'
   - 'spotify'
+
 brew_packages:
   - 'ansible-lint'
   - 'aria2'
@@ -64,54 +66,63 @@ brew_packages:
   - 'tmux'
   - 'vcsh'
   - 'yamllint'
+
 npm_packages_global:
   - 'git-recall'
+
 gem_packages_global:
   - 'neovim'
+
 dockitems_to_persist:
-  - name: "iTerm"
-    path: "/Applications/iTerm.app"
+  - name: 'iTerm'
+    path: '/Applications/iTerm.app'
     pos: 1
-  - name: Safari
-    path: "/Applications/Safari.app"
+  - name: 'Safari'
+    path: '/Applications/Safari.app'
     pos: 2
-  - name: OmniFocus
-    path: "/Applications/OmniFocus.app"
+  - name: 'OmniFocus'
+    path: '/Applications/OmniFocus.app'
     pos: 3
-  - name: IINA
-    path: "/Applications/IINA.app"
+  - name: 'IINA'
+    path: '/Applications/IINA.app'
     pos: 4
-  - name: Visual Studio Code
-    path: "/Applications/Visual Studio Code.app"
+  - name: 'Visual Studio Code'
+    path: '/Applications/Visual Studio Code.app'
     pos: 5
-  - name: 1Password
-    path: "/Applications/1Password 6.app"
+  - name: '1Password'
+    path: '/Applications/1Password 6.app'
     pos: 6
-  - name: Calendar
-    path: "/Applications/Calendar.app"
+  - name: 'Calendar'
+    path: '/Applications/Calendar.app'
     pos: 7
 
 dockitems_to_remove:
-  - App Store
-  - Contacts
-  - FaceTime
-  - Launchpad
-  - Maps
-  - Notes
-  - Photos
-  - Reminders
-  - System Preferences
-  - iBooks
-  - iTunes
+  - 'App Store'
+  - 'Contacts'
+  - 'FaceTime'
+  - 'Launchpad'
+  - 'Maps'
+  - 'Notes'
+  - 'Photos'
+  - 'Reminders'
+  - 'System Preferences'
+  - 'iBooks'
+  - 'iTunes'
+
+
 install_homebrew_if_missing: true
 mas_installed_apps:
   - {id: 1346203938, name: "OmniFocus"}
   - {id: 880001334, name: "Reeder"}
   - {id: 411643860, name: "DaisyDisk"}
+
 pip_packages_global:
-  - neovim
+  - 'neovim'
+
 pip_packages:
-  - pipsi
+  - 'pipsi'
+
 pipsi_packages:
-  - organize-tool
+  - 'organize-tool'
+
 upgrade_homebrew_packages: false

@@ -111,3 +111,12 @@
     type: float
     value: 0
     state: present
+
+- name: Set default global hotkey for copyq
+  osx_defaults:
+    domain: com.copyq.copyq
+    key: Command.GlobalShortcut
+    type: array
+    value:
+      - "ctrl+alt+v"
+    state: present

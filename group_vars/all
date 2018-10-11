@@ -5,7 +5,7 @@ brew_cask_packages:
   - 'amethyst'
   - 'appcleaner'
   - 'borgbackup'
-  - 'clipy'
+  - 'copyq'
   - 'cyberduck'
   - 'firefox'
   - 'google-chrome'

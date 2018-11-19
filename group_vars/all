@@ -31,6 +31,7 @@ brew_cask_multimedia_packages:
   - 'spotify'
 
 brew_packages:
+  - 'eddieantonio/eddieantonio/imgcat'
   - 'ansible-lint'
   - 'aria2'
   - 'bash'

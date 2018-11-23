@@ -5,8 +5,11 @@
   roles:
     - derphilipp.user_settings
     - derphilipp.homebrew_packages
-    - derphilipp.pipsi
-    - geerlingguy.mas
+    - derphilipp.python
+    - derphilipp.npm
+    - derphilipp.gem
     - derphilipp.macos_default_settings
     - derphilipp.mr
     - derphilipp.dock_settings
+    - geerlingguy.mas
+    - derphilipp.homebrew_multimedia_packages

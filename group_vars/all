@@ -1,101 +1,151 @@
 ---
 brew_cask_packages:
-- '1password6'
-- 'Homebrew/homebrew-cask-fonts/font-droidsansmono-nerd-font'
-- 'Homebrew/homebrew-cask-fonts/font-droidsansmono-nerd-font-mono'
-- 'Homebrew/homebrew-cask-fonts/font-sourcecodepro-nerd-font-mono'
-- 'alfred'
-- 'amethyst'
-- 'appcleaner'
-- 'borgbackup'
-- 'clipy'
-- 'cyberduck'
-- 'dropbox'
-- 'duet'
-- 'firefox'
-- 'franz'
-- 'keka'
-- 'google-chrome'
-- 'iina'
-- 'istat-menus'
-- 'iterm2'
-- 'nextcloud'
-- 'omnigraffle'
-- 'pocket-casts'
-- 'silicon-labs-vcp-driver'
-- 'spotify'
-- 'tunnelblick'
-- 'visual-studio-code'
-- 'rcdefaultapp'
+  - '1password6'
+  - 'Homebrew/homebrew-cask-fonts/font-droidsansmono-nerd-font'
+  - 'Homebrew/homebrew-cask-fonts/font-droidsansmono-nerd-font-mono'
+  - 'Homebrew/homebrew-cask-fonts/font-sourcecodepro-nerd-font-mono'
+  - 'alfred'
+  - 'amethyst'
+  - 'appcleaner'
+  - 'arq'
+  - 'borgbackup'
+  - 'clipy'
+  - 'cyberduck'
+  - 'dropbox'
+  - 'duet'
+  - 'firefox'
+  - 'franz'
+  - 'google-chrome'
+  - 'iina'
+  - 'istat-menus'
+  - 'iterm2'
+  - 'keka'
+  - 'kekadefaultapp'
+  - 'nextcloud'
+  - 'omnigraffle'
+  - 'pocket-casts'
+  - 'rcdefaultapp'
+  - 'silicon-labs-vcp-driver'
+  - 'spotify'
+  - 'tunnelblick'
+  - 'visual-studio-code'
+
+brew_cask_multimedia_packages:
+  - '1password6'
+  - 'alfred'
+  - 'dropbox'
+  - 'duet'
+  - 'franz'
+  - 'istat-menus'
+  - 'nextcloud'
+  - 'omnigraffle'
+  - 'pocket-casts'
+  - 'spotify'
 
 brew_packages:
-- 'aria2'
-- 'bat'
-- 'bash'
-- 'direnv'
-- 'entr'
-- 'diff-so-fancy'
-- 'exa'
-- 'fd'
-- 'fish'
-- 'httpie'
-- 'git'
-- 'imagemagick'
-- 'mr'
-- 'gnu-sed'
-- 'neovim'
-- 'nmap'
-- 'pipenv'
-- 'python'
-- 'ripgrep'
-- 'thefuck'
-- 'tmux'
-- 'tldr'
-- 'vcsh'
+  - 'ansible-lint'
+  - 'aria2'
+  - 'bash'
+  - 'bat'
+  - 'black'
+  - 'cookiecutter'
+  - 'ddgr'
+  - 'diff-so-fancy'
+  - 'direnv'
+  - 'eddieantonio/eddieantonio/imgcat'
+  - 'entr'
+  - 'exa'
+  - 'fd'
+  - 'fish'
+  - 'fzf'
+  - 'gawk'
+  - 'gibo'
+  - 'git'
+  - 'git-extras'
+  - 'gnu-sed'
+  - 'howdoi'
+  - 'httpie'
+  - 'hub'
+  - 'icdiff'
+  - 'imagemagick'
+  - 'iproute2mac'
+  - 'lnav'
+  - 'mr'
+  - 'mtr'
+  - 'neovim'
+  - 'nmap'
+  - 'npm'
+  - 'pipenv'
+  - 'pre-commit'
+  - 'python'
+  - 'realpath'
+  - 'ripgrep'
+  - 'rsync'
+  - 'ruby'
+  - 'thefuck'
+  - 'tldr'
+  - 'tmux'
+  - 'vcsh'
+  - 'yamllint'
+  - 'yank'
 
-install_homebrew_if_missing: true
-upgrade_homebrew_packages: false
+npm_packages_global:
+  - 'git-recall'
+  - 'neovim'
 
-mas_installed_apps:
-  - { id: 1346203938, name: "OmniFocus" }
-  - { id: 880001334, name: "Reeder" }
-  - { id: 411643860, name: "DaisyDisk" }
-
-dockitems_to_remove:
-  - Launchpad
-  - Notes
-  - Reminders
-  - Maps
-  - Photos
-  - FaceTime
-  - iBooks
-  - App Store
-  - iTunes
-  - System Preferences
-  - Contacts
+gem_packages_global:
+  - 'neovim'
 
 dockitems_to_persist:
-  - name: "iTerm"
-    path: "/Applications/iTerm.app"
+  - name: 'iTerm'
+    path: '/Applications/iTerm.app'
     pos: 1
-  - name: Safari
-    path: "/Applications/Safari.app"
+  - name: 'Safari'
+    path: '/Applications/Safari.app'
     pos: 2
-  - name: OmniFocus
-    path: "/Applications/OmniFocus.app"
+  - name: 'OmniFocus'
+    path: '/Applications/OmniFocus.app'
     pos: 3
-  - name: IINA
-    path: "/Applications/IINA.app"
+  - name: 'IINA'
+    path: '/Applications/IINA.app'
     pos: 4
-  - name: Visual Studio Code
-    path: "/Applications/Visual Studio Code.app"
+  - name: 'Visual Studio Code'
+    path: '/Applications/Visual Studio Code.app'
     pos: 5
-  - name: 1Password
-    path: "/Applications/1Password 6.app"
+  - name: '1Password'
+    path: '/Applications/1Password 6.app'
     pos: 6
-  - name: Calendar
-    path: "/Applications/Calendar.app"
+  - name: 'Calendar'
+    path: '/Applications/Calendar.app'
     pos: 7
 
+dockitems_to_remove:
+  - 'App Store'
+  - 'Contacts'
+  - 'FaceTime'
+  - 'Launchpad'
+  - 'Maps'
+  - 'Notes'
+  - 'Photos'
+  - 'Reminders'
+  - 'System Preferences'
+  - 'iBooks'
+  - 'iTunes'
+
+
+install_homebrew_if_missing: true
+mas_installed_apps:
+  - {id: 1346203938, name: "OmniFocus"}
+  - {id: 880001334, name: "Reeder"}
+  - {id: 411643860, name: "DaisyDisk"}
+
+pip_packages_global:
+  - 'neovim'
+
+pip_packages:
+  - 'pipsi'
+
 pipsi_packages:
-  - organize-tool
+  - 'organize-tool'
+
+upgrade_homebrew_packages: false

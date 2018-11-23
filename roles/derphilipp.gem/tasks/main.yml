@@ -1,0 +1,7 @@
+---
+- name: install ruby packages globally
+  gem:
+    name: "{{ item }}"
+    executable: /usr/local/bin/gem
+    user_install: false
+  with_items: "{{ gem_packages_global }}"

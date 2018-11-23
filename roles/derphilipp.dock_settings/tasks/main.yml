@@ -1,6 +1,7 @@
 ---
 
-- pause:
+- name: Ask if dock shall be set up
+  pause:
     prompt: "Do you want to set up Dock (yes/no)?"
   register: set_up_dock
   delegate_to: localhost
@@ -12,7 +13,7 @@
   when: hostvars['localhost']['set_up_dock']['user_input'] == "yes"
 
 - name: Remove all crap from Dock
-  shell: dockutil --remove '{{ item }}'
+  command: dockutil --remove '{{ item }}'
   ignore_errors: true
   with_items: "{{ dockitems_to_remove }}"
   when: hostvars['localhost']['set_up_dock']['user_input'] == "yes"
@@ -23,6 +24,6 @@
   when: hostvars['localhost']['set_up_dock']['user_input'] == "yes"
 
 - name: Fix order
-  shell: "dockutil --move '{{ item.name }}' --position {{ item.pos }}"
+  command: "dockutil --move '{{ item.name }}' --position {{ item.pos }}"
   with_items: "{{ dockitems_to_persist }}"
   when: hostvars['localhost']['set_up_dock']['user_input'] == "yes"

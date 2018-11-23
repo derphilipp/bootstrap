@@ -3,6 +3,7 @@ brew_cask_packages:
 - '1password6'
 - 'Homebrew/homebrew-cask-fonts/font-droidsansmono-nerd-font'
 - 'Homebrew/homebrew-cask-fonts/font-droidsansmono-nerd-font-mono'
+- 'Homebrew/homebrew-cask-fonts/font-sourcecodepro-nerd-font-mono'
 - 'alfred'
 - 'amethyst'
 - 'appcleaner'

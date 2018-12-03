@@ -72,10 +72,12 @@ brew_packages:
   - 'lnav'
   - 'mr'
   - 'mtr'
+  - 'neofetch'
   - 'neovim'
   - 'nmap'
   - 'npm'
   - 'pipenv'
+  - 'prettyping'
   - 'pre-commit'
   - 'python'
   - 'realpath'
@@ -149,3 +151,6 @@ pipsi_packages:
   - 'organize-tool'
 
 upgrade_homebrew_packages: false
+
+ruby_packages:
+  - 'lunchy'
